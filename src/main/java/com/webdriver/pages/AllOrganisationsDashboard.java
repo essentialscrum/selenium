@@ -1,6 +1,5 @@
 package com.webdriver.pages;
 
-import com.webdriver.helpers.SeleniumHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,22 +11,33 @@ public class AllOrganisationsDashboard extends BasePage {
 
     public AllOrganisationsDashboard(WebDriver driver) {
         super(driver);
-        if (!driver.getCurrentUrl().startsWith(MY_XERO_COM)) {
-            driver.navigate().to(MY_XERO_COM);
-        }
     }
 
-    public void removeAllOrganisations() {
+    public static AllOrganisationsDashboard goToAllOrganisationsDashboard(WebDriver driver) throws InterruptedException {
+        while (!(driver.getCurrentUrl().startsWith(MY_XERO_COM) && driver.getCurrentUrl().contains("Dashboard"))){
+            Thread.sleep(100L);
+            driver.navigate().to(MY_XERO_COM);
+            System.out.println(driver.getCurrentUrl());
+        }
+
+        return new AllOrganisationsDashboard(driver);
+    }
+
+    public void removeAllOrganisations() throws InterruptedException {
         final By removeLinks = By.cssSelector("a[data-automationid='deleteOrgLink']");
         int size = driver.findElements(removeLinks).size();
         while (size-- > 0) {
-            SeleniumHelper.waitUntilClickable(driver, removeLinks);
-            final WebElement link = driver.findElements(removeLinks).stream().findAny().orElseThrow(IllegalArgumentException::new);
-            link.click();
+            driver.findElements(removeLinks).stream()
+                    .findFirst()
+                    .orElseThrow(IllegalArgumentException::new)
+                    .click();
 
             driver.findElement(By.cssSelector("div[class='x-btn red x-exclude x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon']")).click();
             driver.findElement(By.cssSelector("input[class='x-form-field x-form-radio x-form-cb']")).click();
             driver.findElement(By.cssSelector("div[class='x-btn blue x-exclude x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon']")).click();
+
+            while (size != 0 && driver.findElements(removeLinks).size() != size)
+                Thread.sleep(100);
         }
     }
 
@@ -42,16 +52,6 @@ public class AllOrganisationsDashboard extends BasePage {
                 .filter(org -> org.getText().equals(companyName))
                 .findFirst()
                 .orElseThrow(IllegalArgumentException::new).click();
-        return new OneOrganisationDashboard(driver);
-    }
-
-    public OneOrganisationDashboard addDefaultNewZealandOrganisation() {
-        final OrganisationSetup organisationSetup = addNewOrganisation();
-        String companyName = "Test Name " + System.currentTimeMillis();
-        organisationSetup.setTheCompanyName(companyName);
-        organisationSetup.setCountryForTaxes("New Zealand");//Only from New Zealand should be
-        organisationSetup.setCompanyIndustry("Test Industry");
-        organisationSetup.clickStartTrial();
         return new OneOrganisationDashboard(driver);
     }
 }

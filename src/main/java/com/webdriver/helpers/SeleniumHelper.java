@@ -6,9 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Created by A.Chistiakov on 05.07.2017.
- */
 public final class SeleniumHelper {
 
     private SeleniumHelper() {
