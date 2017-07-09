@@ -29,7 +29,7 @@ public class ANZAccountPage extends BasePage {
 
     public void setAccountType(String type) {
         accountType.click();
-        driver.findElements(By.cssSelector("li[class='ba-combo-list-item']")).stream()
+        driver.findElements(By.cssSelector("li.ba-combo-list-item")).stream()
                 .filter(t->t.getText().toLowerCase().contains(type.toLowerCase()))
                 .findFirst()
                 .orElseThrow(IllegalArgumentException::new)

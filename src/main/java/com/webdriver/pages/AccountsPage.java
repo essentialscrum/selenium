@@ -26,11 +26,11 @@ public class AccountsPage extends BasePage {
     }
 
     public boolean availableBanksContains(String bankAccountName){
-        return driver.findElements(By.cssSelector("div[class='bank']")).stream()
+        return driver.findElements(By.cssSelector("div.bank")).stream()
                 .anyMatch(b->b.findElement(By.cssSelector("a[class='bank-name global']")).getText().contains(bankAccountName));
     }
 
     public boolean alertIsShown(){
-        return driver.findElement(By.cssSelector("ul[class='x-list-plain']")).isDisplayed();
+        return driver.findElement(By.cssSelector("ul.x-list-plain")).isDisplayed();
     }
 }
