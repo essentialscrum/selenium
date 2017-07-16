@@ -8,16 +8,16 @@ import java.util.List;
 
 public class AllOrganisationsDashboard extends BasePage {
     public static final String MY_XERO_COM = "https://my.xero.com/";
+    public static final String MY_XERO_TITLE = "My Xero | Home";
 
     public AllOrganisationsDashboard(WebDriver driver) {
         super(driver);
     }
 
     public static AllOrganisationsDashboard goToAllOrganisationsDashboard(WebDriver driver) throws InterruptedException {
-        while (!(driver.getCurrentUrl().startsWith(MY_XERO_COM) && driver.getCurrentUrl().contains("Dashboard"))){
+        while (!driver.getTitle().contains(MY_XERO_TITLE)){
             Thread.sleep(100L);
             driver.navigate().to(MY_XERO_COM);
-            System.out.println(driver.getCurrentUrl());
         }
 
         return new AllOrganisationsDashboard(driver);
@@ -32,9 +32,10 @@ public class AllOrganisationsDashboard extends BasePage {
                     .orElseThrow(IllegalArgumentException::new)
                     .click();
 
-            driver.findElement(By.cssSelector("div[class='x-btn red x-exclude x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon']")).click();
-            driver.findElement(By.cssSelector("input[class='x-form-field x-form-radio x-form-cb']")).click();
-            driver.findElement(By.cssSelector("div[class='x-btn blue x-exclude x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon']")).click();
+            new CancelSubscriptionPopup(driver)
+                    .clickConfirmCancellation()
+                    .tickSomeReason()
+                    .clickSendFeedback();
 
             while (size != 0 && driver.findElements(removeLinks).size() != size)
                 Thread.sleep(100);
@@ -44,14 +45,5 @@ public class AllOrganisationsDashboard extends BasePage {
     public OrganisationSetup addNewOrganisation() {
         driver.navigate().to(driver.getCurrentUrl().replace("Dashboard", "Organisation/Setup"));
         return new OrganisationSetup(driver);
-    }
-
-    public OneOrganisationDashboard goToOneOrganisationDashboard(String companyName) {
-        final List<WebElement> organisationLinks = driver.findElements(By.cssSelector("a[data-automationid='dashboardOrgName']"));
-        organisationLinks.stream()
-                .filter(org -> org.getText().equals(companyName))
-                .findFirst()
-                .orElseThrow(IllegalArgumentException::new).click();
-        return new OneOrganisationDashboard(driver);
     }
 }

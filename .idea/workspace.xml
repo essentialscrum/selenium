@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f28f1856-a470-4303-a0f5-b46414e583ba" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/CancelSubscriptionPopup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/FeedbackPopup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/webdriver/pages/AllOrganisationsDashboard.class" afterPath="$PROJECT_DIR$/target/classes/com/webdriver/pages/AllOrganisationsDashboard.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/ANZAccountPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/ANZAccountPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java" afterPath="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java" />
     </list>
     <ignored path="selenium-example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
+              <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,13 +41,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/BasePage.java">
+      <file leaf-file-name="RemoteWebElement.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.6470587">
+              <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
+                <element signature="e#2656#2657#0" expanded="true" />
+                <element signature="e#9800#9801#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,31 +69,33 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java">
+      <file leaf-file-name="AllOrganisationsDashboard.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding />
+            <state vertical-scroll-proportion="0.30373833">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllOrganisationsDashboard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
+      <file leaf-file-name="FeedbackPopup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/FeedbackPopup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="121" selection-start-line="15" selection-start-column="121" selection-end-line="15" selection-end-column="121" />
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,21 +123,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeleniumHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/helpers/SeleniumHelper.java">
+      <file leaf-file-name="CancelSubscriptionPopup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/CancelSubscriptionPopup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding />
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganisationSetup.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrganisationSetup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0817757">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,11 +181,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/OneOrganisationDashboard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/ANZAccountPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/CancelSubscription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/FeedbackPopup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/CancelSubscriptionPopup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java" />
       </list>
     </option>
   </component>
@@ -462,8 +473,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +488,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../psc-test/pom.xml" />
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountsCreationTest.htmlInjectionCreditCardOnly">
+  <component name="RunManager" selected="JUnit.BankAccountsCreationTest.create2AccountsWithTheSameName">
     <configuration default="false" name="BankAccountsCreationTest.htmlInjection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -491,32 +502,6 @@
       <option name="PACKAGE_NAME" value="com.webdriver.tests" />
       <option name="MAIN_CLASS_NAME" value="com.webdriver.tests.BankAccountsCreationTest" />
       <option name="METHOD_NAME" value="htmlInjection" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BankAccountsCreationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.webdriver.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="selenium-example" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.webdriver.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.webdriver.tests.BankAccountsCreationTest" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -595,6 +580,32 @@
       <option name="PACKAGE_NAME" value="com.webdriver.tests" />
       <option name="MAIN_CLASS_NAME" value="com.webdriver.tests.BankAccountsCreationTest" />
       <option name="METHOD_NAME" value="htmlInjectionCreditCardOnly" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankAccountsCreationTest.create2AccountsWithTheSameName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.webdriver.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="selenium-example" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.webdriver.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.webdriver.tests.BankAccountsCreationTest" />
+      <option name="METHOD_NAME" value="create2AccountsWithTheSameName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -854,18 +865,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjection" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.inheritCardNumber" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjectionCreditCardOnly" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.inheritCardNumber" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjectionCreditCardOnly" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.create2AccountsWithTheSameName" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjectionCreditCardOnly" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.inheritCardNumber" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjection" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.create2AccountsWithTheSameName" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjectionCreditCardOnly" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.inheritCardNumber" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountsCreationTest.htmlInjection" />
       </list>
     </recent_temporary>
   </component>
@@ -883,35 +894,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 21h 59m 43s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 30m 04s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 22h 02m 02s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 33m 01s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 22h 03m 14s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 35m 31s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 22h 03m 39s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 36m 01s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 22h 04m 03s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 36m 31s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest - 2017.07.08 at 22h 08m 58s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 37m 59s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest_htmlInjectionCreditCardOnly - 2017.07.09 at 22h 24m 21s.xml">
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 43m 26s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 44m 03s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountsCreationTest_create2AccountsWithTheSameName - 2017.07.17 at 00h 44m 34s.xml">
+      <configuration name="BankAccountsCreationTest.create2AccountsWithTheSameName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountsCreationTest_htmlInjectionCreditCardOnly - 2017.07.17 at 00h 28m 51s.xml">
       <configuration name="BankAccountsCreationTest.htmlInjectionCreditCardOnly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountsCreationTest_htmlInjectionCreditCardOnly - 2017.07.09 at 22h 25m 40s.xml">
-      <configuration name="BankAccountsCreationTest.htmlInjectionCreditCardOnly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountsCreationTest_htmlInjectionCreditCardOnly - 2017.07.09 at 22h 27m 11s.xml">
-      <configuration name="BankAccountsCreationTest.htmlInjectionCreditCardOnly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountsCreationTest_inheritCardNumber - 2017.07.09 at 22h 22m 13s.xml">
-      <configuration name="BankAccountsCreationTest.inheritCardNumber" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -937,8 +948,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6591676" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24866024" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5748032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25348338" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -949,6 +959,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5748032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -966,49 +977,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar!/org/openqa/selenium/support/events/EventFiringWebDriver.class</url>
           <line>448</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/LoginPage.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1017,39 +992,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OneOrganisationDashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1090,7 +1032,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,13 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3529413">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6764708">
@@ -1270,13 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7941175">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.852941">
@@ -1309,9 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="537" column="0" selection-start-line="537" selection-start-column="0" selection-end-line="537" selection-end-column="0" />
-          <folding>
-            <element signature="e#21516#21517#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,15 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/helpers/SeleniumHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,43 +1257,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/helpers/SeleniumHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="121" selection-start-line="15" selection-start-column="121" selection-end-line="15" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/ANZAccountPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,11 +1277,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/LoginPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1.jar!/org/openqa/selenium/support/pagefactory/ByChained.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.3235292">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.1/selenium-support-2.53.1-sources.jar!/org/openqa/selenium/support/pagefactory/ByChained.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.382353">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+          <folding>
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#9800#9801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/FeedbackPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/CancelSubscriptionPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/ANZAccountPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1405,11 +1382,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/OrganisationSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0817757">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30373833">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
