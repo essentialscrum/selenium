@@ -68,14 +68,15 @@ public class BankAccountsCreationTest extends TestBase {
 
     @Test
     public void htmlInjection() throws InterruptedException {
+        final String accountName = "<span>The longest</span>";//Maximum required value and html injection
         final String accountNumber = "</span>Number1<span>";//Maximum required value and html injection
 
         final AccountsPage accountsPageAfter = accountsPageBefore.addANZBankAccount()
-                .setAccountName("<span>The longest</span>")//Maximum required value and html injection
+                .setAccountName(accountName)
                 .setAccountType("Other")
                 .setAccountNumber(accountNumber)
                 .pushContinue();
-        Assert.assertTrue(accountsPageAfter.availableBanksContains("<span>The longest</span>"));
+        Assert.assertTrue(accountsPageAfter.availableBanksContains(accountName));
         Assert.assertTrue(accountsPageAfter.availableBanksContains(accountNumber));
     }
 
