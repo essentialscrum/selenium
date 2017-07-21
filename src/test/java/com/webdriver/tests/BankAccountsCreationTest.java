@@ -23,7 +23,7 @@ import static com.webdriver.pages.AllOrganisationsDashboard.goToAllOrganisations
  * These tests shouldn't be run in Parallel
  */
 public class BankAccountsCreationTest extends TestBase {
-    private OneOrganisationDashboard organisationDashboard;
+    private AccountsPage accountsPageBefore;
 
     @Before
     public void setUp() throws InterruptedException {
@@ -31,7 +31,10 @@ public class BankAccountsCreationTest extends TestBase {
         final OrganisationSetup organisationSetup = logIn();
 
         //Here should be the REST/API request to crete our Organisation
-        organisationDashboard = organisationSetup.addDefaultNewZealandOrganisation();
+        final OneOrganisationDashboard organisationDashboard = organisationSetup.addDefaultNewZealandOrganisation();
+
+        //Go to AccountsPage
+        accountsPageBefore = organisationDashboard.selectAccountsTab();
     }
 
     @After
@@ -53,54 +56,47 @@ public class BankAccountsCreationTest extends TestBase {
      */
     @Test
     public void createAccountWithMinParams() throws InterruptedException {
-        final AccountsPage accountsPageBefore = organisationDashboard.selectAccountsTab();
-        final ANZAccountPage anzAccountPage = accountsPageBefore.addANZBankAccount();
         final String accountName = " ";//Minimum required value and highest probability error
-        anzAccountPage.setAccountName(accountName);
-        anzAccountPage.setAccountType("Other");//Not a credit card
-        anzAccountPage.setAccountNumber("/");//The same story, but ' ' is not accepted here
-        final AccountsPage accountsPageAfter = anzAccountPage.pushContinue();
+
+        final AccountsPage accountsPageAfter = accountsPageBefore.addANZBankAccount()
+                .setAccountName(accountName)
+                .setAccountType("Other")//Not a credit card
+                .setAccountNumber("/")//The same story, but ' ' is not accepted here
+                .pushContinue();
         Assert.assertTrue(accountsPageAfter.availableBanksContains(accountName));
     }
 
     @Test
     public void htmlInjection() throws InterruptedException {
-        final AccountsPage accountsPageBefore = organisationDashboard.selectAccountsTab();
-        final ANZAccountPage anzAccountPage = accountsPageBefore.addANZBankAccount();
-        final String accountName = "<span>The longest</span>";//Maximum required value and html injection
-        anzAccountPage.setAccountName(accountName);
-        anzAccountPage.setAccountType("Other");
         final String accountNumber = "</span>Number1<span>";//Maximum required value and html injection
-        anzAccountPage.setAccountNumber(accountNumber);
-        final AccountsPage accountsPageAfter = anzAccountPage.pushContinue();
-        Assert.assertTrue(accountsPageAfter.availableBanksContains(accountName));
+
+        final AccountsPage accountsPageAfter = accountsPageBefore.addANZBankAccount()
+                .setAccountName("<span>The longest</span>")//Maximum required value and html injection
+                .setAccountType("Other")
+                .setAccountNumber(accountNumber)
+                .pushContinue();
+        Assert.assertTrue(accountsPageAfter.availableBanksContains("<span>The longest</span>"));
         Assert.assertTrue(accountsPageAfter.availableBanksContains(accountNumber));
     }
 
     @Test
     public void htmlInjectionCreditCardOnly() throws InterruptedException {
-        final AccountsPage accountsPageBefore = organisationDashboard.selectAccountsTab();
-        final ANZAccountPage anzAccountPage = accountsPageBefore.addANZBankAccount();
-        final String accountName = "Account Name";
-        anzAccountPage.setAccountName(accountName);
-        anzAccountPage.setAccountType("Credit card");
-        final String cardNumber = "<br>";//Max (Min the same) required value and html injection
-        anzAccountPage.setCreditCardNumber(cardNumber);
-        final AccountsPage accountsPageAfter = anzAccountPage.pushContinue();
-        Assert.assertTrue(accountsPageAfter.availableBanksContains(cardNumber));
+        final AccountsPage accountsPageAfter = accountsPageBefore.addANZBankAccount()
+                .setAccountName("Account Name")
+                .setAccountType("Credit card")
+                .setCreditCardNumber("<br>")//Max (Min the same) required value and html injection
+                .pushContinue();
+        Assert.assertTrue(accountsPageAfter.availableBanksContains("<br>"));
     }
 
     @Test
     public void inheritCardNumber() throws InterruptedException {
-        final AccountsPage accountsPageBefore = organisationDashboard.selectAccountsTab();
-        final ANZAccountPage anzAccountPage = accountsPageBefore.addANZBankAccount();
-        final String accountName = "Account Name";
-        anzAccountPage.setAccountName(accountName);
-        anzAccountPage.setAccountType("Other");
-        final String accountNumber = "123456";//Credit card number will be inherited from this
-        anzAccountPage.setAccountNumber(accountNumber);
-        anzAccountPage.setAccountType("Credit card");//Change on Credit card
-        final AccountsPage accountsPageAfter = anzAccountPage.pushContinue();
+        final AccountsPage accountsPageAfter = accountsPageBefore.addANZBankAccount()
+                .setAccountName("Account Name")
+                .setAccountType("Other")
+                .setAccountNumber("123456")//Credit card number will be inherited from this
+                .setAccountType("Credit card")//Change on Credit card
+                .pushContinue();
         Assert.assertTrue(accountsPageAfter.alertIsShown());
     }
 

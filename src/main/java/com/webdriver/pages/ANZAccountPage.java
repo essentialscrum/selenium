@@ -18,36 +18,46 @@ public class ANZAccountPage extends BasePage {
 
     public ANZAccountPage(WebDriver driver) {
         super(driver);
-        SeleniumHelper.waitUntilClickable(driver, By.id("accountname-1037-inputEl"));
+        String pageTitle = driver.getTitle();
+        if (!pageTitle.contains("Xero | Find your bank |")) {
+            throw new IllegalArgumentException(
+                    String.format("page is not %s, it has unexpected title %s", this.getClass().getSimpleName(), pageTitle));
+        }
+
     }
 
-    public void setAccountName(String name) {
+    public ANZAccountPage setAccountName(String name) {
+        SeleniumHelper.waitUntilClickable(driver, accountName);
         accountName.clear();
         accountName.sendKeys(name);
         accountName.sendKeys(Keys.ENTER);
+        return this;
     }
 
-    public void setAccountType(String type) {
+    public ANZAccountPage setAccountType(String type) {
         accountType.click();
         driver.findElements(By.cssSelector("li.ba-combo-list-item")).stream()
-                .filter(t->t.getText().toLowerCase().contains(type.toLowerCase()))
+                .filter(t -> t.getText().toLowerCase().contains(type.toLowerCase()))
                 .findFirst()
                 .orElseThrow(IllegalArgumentException::new)
                 .click();
+        return this;
     }
 
-    public void setAccountNumber(String number) {
+    public ANZAccountPage setAccountNumber(String number) {
         final WebElement accountNumber = driver.findElement(By.id("accountnumber-1068-inputEl"));
         accountNumber.clear();
         accountNumber.sendKeys(number);
         accountNumber.sendKeys(Keys.ENTER);
+        return this;
     }
 
-    public void setCreditCardNumber(String number) {
+    public ANZAccountPage setCreditCardNumber(String number) {
         final WebElement cardNumber = driver.findElement(By.id("accountnumber-1063-inputEl"));
         cardNumber.clear();
         cardNumber.sendKeys(number);
         cardNumber.sendKeys(Keys.ENTER);
+        return this;
     }
 
     public AccountsPage pushContinue() {

@@ -18,4 +18,8 @@ public final class SeleniumHelper {
     public static WebElement waitUntilClickable(WebDriver driver, By locator) {
         return (new WebDriverWait(driver, 60)).until(ExpectedConditions.elementToBeClickable(locator));
     }
+
+    public static WebElement waitUntilClickable(WebDriver driver, WebElement webElement) {
+        return (new WebDriverWait(driver, 60)).until(ExpectedConditions.elementToBeClickable(webElement));
+    }
 }
