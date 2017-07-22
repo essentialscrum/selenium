@@ -18,12 +18,11 @@ public class ANZAccountPage extends BasePage {
 
     public ANZAccountPage(WebDriver driver) {
         super(driver);
-        String pageTitle = driver.getTitle();
+        final String pageTitle = driver.getTitle();
         if (!pageTitle.contains("Xero | Find your bank |")) {
             throw new IllegalArgumentException(
                     String.format("page is not %s, it has unexpected title %s", this.getClass().getSimpleName(), pageTitle));
         }
-
     }
 
     public ANZAccountPage setAccountName(String name) {

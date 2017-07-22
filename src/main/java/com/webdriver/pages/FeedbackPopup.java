@@ -6,9 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.pagefactory.ByChained;
 
-/**
- * Created by A.Chistiakov on 16.07.2017.
- */
 public class FeedbackPopup extends BasePage {
     private WebElement checkboxWithReason;
     private WebElement sendFeedbackButton;

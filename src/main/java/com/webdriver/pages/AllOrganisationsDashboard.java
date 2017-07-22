@@ -2,9 +2,6 @@ package com.webdriver.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class AllOrganisationsDashboard extends BasePage {
     public static final String MY_XERO_COM = "https://my.xero.com/";
@@ -15,8 +12,8 @@ public class AllOrganisationsDashboard extends BasePage {
     }
 
     public static AllOrganisationsDashboard goToAllOrganisationsDashboard(WebDriver driver) throws InterruptedException {
-        while (!driver.getTitle().contains(MY_XERO_TITLE)){
-            Thread.sleep(100L);
+        while (!driver.getTitle().contains(MY_XERO_TITLE)) {
+            Thread.sleep(100L);//ToDo
             driver.navigate().to(MY_XERO_COM);
         }
 

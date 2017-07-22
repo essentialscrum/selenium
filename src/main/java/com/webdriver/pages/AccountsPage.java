@@ -13,6 +13,7 @@ public class AccountsPage extends BasePage {
 
     public ANZAccountPage addANZBankAccount() throws InterruptedException {
         driver.navigate().to("https://go.xero.com/Banking/Account/#find");
+
         final WebElement bankNameInput = driver.findElement(By.id("xui-searchfield-1018-inputEl"));
         bankNameInput.sendKeys(ANZAccountPage.ANZ_BANK);
         Thread.sleep(2000L);//TODO

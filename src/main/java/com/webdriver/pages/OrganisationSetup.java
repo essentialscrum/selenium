@@ -10,7 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class OrganisationSetup extends BasePage {
-    @FindBy(id = "text-1022-inputEl")
+    private static final String ORGANISATION_ID = "text-1022-inputEl";
+
+    @FindBy(id = ORGANISATION_ID)
     private WebElement organisationName;
     @FindBy(id = "countryCmb-inputEl")
     private WebElement countryForTaxes;
@@ -19,35 +21,34 @@ public class OrganisationSetup extends BasePage {
     @FindBy(id = "simplebutton-1034")
     private WebElement startTrial;
 
-
     public OrganisationSetup(WebDriver driver) {
         super(driver);
     }
 
-    public static boolean isOrganisationSetupPage(WebDriver driver){
-        final List<WebElement> organisationName = driver.findElements(By.id("text-1022-inputEl"));
+    public static boolean isOrganisationSetupPage(WebDriver driver) {
+        final List<WebElement> organisationName = driver.findElements(By.id(ORGANISATION_ID));
         return organisationName != null && !organisationName.isEmpty();
     }
 
-    public void setTheCompanyName(String companyName){
+    public void setTheCompanyName(String companyName) {
         organisationName.clear();
         organisationName.sendKeys(companyName);
     }
 
-    public void setCountryForTaxes(String countryName){
+    public void setCountryForTaxes(String countryName) {
         countryForTaxes.clear();
         countryForTaxes.sendKeys(countryName);
         countryForTaxes.sendKeys(Keys.ENTER);
     }
 
-    public void setCompanyIndustry(String industry){
+    public void setCompanyIndustry(String industry) {
         companyIndustry.clear();
         companyIndustry.sendKeys(industry);
         SeleniumHelper.waitUntilClickable(driver, By.className("industryComboList"));
         companyIndustry.sendKeys(Keys.ENTER);
     }
 
-    public OneOrganisationDashboard clickStartTrial(){
+    public OneOrganisationDashboard clickStartTrial() {
         startTrial.click();
         return new OneOrganisationDashboard(driver);
     }

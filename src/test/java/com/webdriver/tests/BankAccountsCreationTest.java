@@ -105,4 +105,14 @@ public class BankAccountsCreationTest extends TestBase {
     public void create2AccountsWithTheSameName() throws InterruptedException {
         //TODO just to show a test case idea
     }
+
+    @Test
+    public void createAccountWithDoubleClick() throws InterruptedException {
+        //TODO just to show a test case idea
+    }
+
+    @Test
+    public void createAccountWithKeyboardOnly() throws InterruptedException {
+        //TODO just to show a test case idea
+    }
 }
