@@ -57,7 +57,9 @@ public class WebDriverConfig {
         driver.manage().window().setSize(new Dimension(1200, 850));
         return driver;
     }
-
+/*
+    This method would be useful while we not clear the Spring context.
+*/
     @Bean
     @Primary
     @Scope("prototype")
