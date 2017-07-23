@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.test.annotation.DirtiesContext;
 
 import static com.webdriver.pages.AllOrganisationsDashboard.goToAllOrganisationsDashboard;
 
@@ -22,6 +23,7 @@ import static com.webdriver.pages.AllOrganisationsDashboard.goToAllOrganisations
  * <p/>
  * These tests shouldn't be run in Parallel
  */
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)//Cause don't use the Fake login page, we're holding the login session
 public class BankAccountsCreationTest extends TestBase {
     private AccountsPage accountsPageBefore;
 

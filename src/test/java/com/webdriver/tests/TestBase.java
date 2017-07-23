@@ -28,7 +28,6 @@ public abstract class TestBase {
 
     @Before
     public void setupTest() {
-        driver.manage().deleteAllCookies();
         driver.get(SITE_URL);
     }
 
