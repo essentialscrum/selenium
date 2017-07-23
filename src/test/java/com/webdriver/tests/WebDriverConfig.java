@@ -18,6 +18,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
+import java.net.URI;
 import java.util.concurrent.TimeUnit;
 
 @Configuration
@@ -66,5 +67,10 @@ public class WebDriverConfig {
     public WebDriver cleanWebDriver(WebDriver driver) throws Exception {
         driver.manage().deleteAllCookies();
         return driver;
+    }
+
+    @Bean
+    public URI baseUrl(@Value("${webdriver.baseUrl:https://login.xero.com/}") URI value) {
+        return value;
     }
 }

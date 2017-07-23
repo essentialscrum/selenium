@@ -7,6 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.inject.Inject;
+import java.net.URI;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -14,14 +15,15 @@ import javax.inject.Inject;
 public abstract class TestBase {
     protected static final String EMAIL = "alex-hellsing@ya.ru";
     protected static final String PASSWORD = "12345678";
-    protected static final String SITE_URL = "https://login.xero.com/";
+    @Inject
+    private URI baseUrl;
 
     @Inject
     protected WebDriver driver;
 
     @Before
     public void setupTest() {
-        driver.get(SITE_URL);
+        driver.get(baseUrl.toString());
     }
 
 }
