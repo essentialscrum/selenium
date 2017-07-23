@@ -1,8 +1,6 @@
 package com.webdriver.tests;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,11 +18,6 @@ public abstract class TestBase {
 
     @Inject
     protected WebDriver driver;
-
-    @BeforeClass
-    public static void setupClass() {
-        ChromeDriverManager.getInstance().setup();
-    }
 
     @Before
     public void setupTest() {

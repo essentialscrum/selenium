@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f28f1856-a470-4303-a0f5-b46414e583ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/BankAccountsCreationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/BankAccountsCreationTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/TestBase.class" afterPath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/TestBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/WebDriverConfig.class" afterPath="$PROJECT_DIR$/target/test-classes/com/webdriver/tests/WebDriverConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/WebDriverConfig.java" afterPath="$PROJECT_DIR$/src/test/java/com/webdriver/tests/WebDriverConfig.java" />
     </list>
     <ignored path="selenium-example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllOrganisationsDashboard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AllOrganisationsDashboard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37313432">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,16 +91,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6098081">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AccountsPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/webdriver/tests/WebDriverConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webdriver/tests/BankAccountsCreationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -968,9 +961,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankAccountsCreationTest - 2017.07.22 at 23h 12m 31s.xml">
-      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BankAccountsCreationTest - 2017.07.23 at 08h 10m 12s.xml">
       <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
     </history-entry>
@@ -995,8 +985,11 @@
     <history-entry file="BankAccountsCreationTest - 2017.07.23 at 08h 35m 29s.xml">
       <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BankAccountsCreationTest_inheritCardNumber - 2017.07.22 at 23h 10m 32s.xml">
-      <configuration name="BankAccountsCreationTest.inheritCardNumber" configurationId="JUnit" />
+    <history-entry file="BankAccountsCreationTest - 2017.07.23 at 08h 40m 20s.xml">
+      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountsCreationTest - 2017.07.23 at 08h 41m 38s.xml">
+      <configuration name="BankAccountsCreationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1058,7 +1051,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java</url>
-          <line>30</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
@@ -1456,19 +1449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/annotation/DirtiesContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1764705">
@@ -1489,10 +1469,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webdriver/pages/AllOrganisationsDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37313432">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/webdriver/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6098081">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
           </folding>
         </state>
       </provider>
